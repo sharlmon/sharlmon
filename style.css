@@ -71,8 +71,18 @@ a {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    mix-blend-mode: difference;
-    /* Cool effect on white/black */
+    /* mix-blend-mode: difference;  <-- Removed to allow background color control */
+    transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+    background: rgba(5, 5, 5, 0.85);
+    /* Translucent Dark */
+    backdrop-filter: blur(10px);
+    /* Blurring effect */
+    padding: 15px 50px;
+    /* Compact height */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .logo {
@@ -1295,7 +1305,9 @@ a {
          
 }
 
-     /* XMP Tool Styles */
+     
+
+/* XMP Tool Styles */
 .upload-zone {
     border: 2px dashed var(--border-light);
     border-radius: 10px;
@@ -1386,6 +1398,7 @@ a {
         transform: translateY(0);
     }
 }
+
 /* WhatsApp Floating Widget */
 .whatsapp-float {
     position: fixed;
