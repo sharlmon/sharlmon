@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHARL-TECH | Pricing & Custom Quotes</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Choose the perfect web design and hosting package. From startup launchpads to enterprise e-commerce suites. Build your custom quote instantly.">
+    <meta name="keywords"
+        content="Web Design Pricing Kenya, Hosting Plans, Custom Website Quote, Cheap Domains Kenya, Sharl-Tech Pricing">
+    <meta name="author" content="Sharl-Tech">
+
+    <!-- CSS -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&family=Orbitron:wght@400;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="images/logo.jpg">
+    <link rel="apple-touch-icon" href="images/logo.jpg">
+
+    <style>
+        /* PDF Print Styles override */
+        @media print {
+            body * {
+                visibility: hidden;
+            }
+
+            #calculator-section,
+            #calculator-section * {
+                visibility: visible;
+            }
+
+            #calculator-section {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                background: white;
+                color: black;
+            }
+
+            .no-print {
+                display: none !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 3D Background Canvas -->
+    <div id="canvas-container"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html" style="color:white; display:flex; align-items:center; gap:10px;">
+                <img src="images/logo.jpg" alt="SHARL-TECH Logo" class="logo-img">
+                <span>SHARL-TECH</span>
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="pricing.html" class="active">Pricing</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="index.html#contact" class="btn-nav">Contact Us</a></li>
+        </ul>
+        <div class="hamburger"><i class="fas fa-bars"></i></div>
+    </nav>
+
+    <!-- Header -->
+    <header class="section" style="padding-top: 150px; padding-bottom: 50px; min-height: auto;">
+        <div class="container" style="text-align: center;">
+            <h1 class="glitch" data-text="PRICING & PLANS" style="font-size: 3.5rem;">PRICING & PLANS</h1>
+            <p class="hero-sub">Transparent Solutions for Every Scale</p>
+        </div>
+    </header>
+
+    <!-- SECTION 1: HERO BUNDLES -->
+    <section class="section" style="padding-top: 0;">
+        <div class="container">
+            <div class="pricing-grid">
+                <!-- The Launchpad -->
+                <div class="pricing-card tilt-card" data-tilt>
+                    <div class="card-header">
+                        <h4>The Launchpad</h4>
+                        <div class="price">KES 25,000</div>
+                        <p style="font-size: 0.8rem; opacity: 0.7; margin-top: 5px;">Best for Startups</p>
+                    </div>
+                    <ul class="features">
+                        <li><i class="fas fa-layer-group"></i> Single Page Design</li>
+                        <li><i class="fas fa-server"></i> 1yr Basic Hosting</li>
+                        <li><i class="fas fa-globe"></i> Free .co.ke Domain</li>
+                        <li><i class="fas fa-lock"></i> SSL Certificate</li>
+                        <li><i class="fas fa-mobile-alt"></i> Mobile Responsive</li>
+                    </ul>
+                    <a href="index.html#contact" class="btn btn-block">Get Started Now</a>
+                </div>
+
+                <!-- Business Professional -->
+                <div class="pricing-card tilt-card featured" data-tilt>
+                    <div class="featured-badge">RECOMMENDED</div>
+                    <div class="card-header">
+                        <h4>Business Pro</h4>
+                        <div class="price">KES 50,000</div>
+                        <p style="font-size: 0.8rem; opacity: 0.7; margin-top: 5px;">For Growing Brands</p>
+                    </div>
+                    <ul class="features">
+                        <li><i class="fas fa-file-alt"></i> Up to 10 Pages</li>
+                        <li><i class="fas fa-rocket"></i> 1yr Business Hosting</li>
+                        <li><i class="fas fa-globe"></i> Free .com Domain</li>
+                        <li><i class="fas fa-briefcase"></i> 5 Corporate Emails</li>
+                        <li><i class="fab fa-google"></i> Basic SEO Foundation</li>
+                        <li><i class="fas fa-life-ring"></i> Priority Support</li>
+                    </ul>
+                    <a href="index.html#contact" class="btn btn-block btn-primary">Get Started Now</a>
+                </div>
+
+                <!-- E-Commerce Suite -->
+                <div class="pricing-card tilt-card" data-tilt>
+                    <div class="card-header">
+                        <h4>E-Commerce</h4>
+                        <div class="price">KES 85,000+</div>
+                        <p style="font-size: 0.8rem; opacity: 0.7; margin-top: 5px;">Online Stores</p>
+                    </div>
+                    <ul class="features">
+                        <li><i class="fas fa-shopping-cart"></i> Full Product Catalog</li>
+                        <li><i class="fas fa-money-bill-wave"></i> M-Pesa/Card Integration</li>
+                        <li><i class="fas fa-boxes"></i> Inventory Management</li>
+                        <li><i class="fas fa-tachometer-alt"></i> 1yr Premium Hosting</li>
+                        <li><i class="fas fa-chalkboard-teacher"></i> Training Session</li>
+                    </ul>
+                    <a href="index.html#contact" class="btn btn-block">Get Started Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: BUILD YOUR OWN QUOTE CALCULATOR -->
+    <section id="calculator-section" class="section contrast-section">
+        <div class="container">
+            <h3 class="section-title">TAILOR YOUR SOLUTION</h3>
+
+            <div class="calculator-wrapper glass-card">
+                <form id="quote-form">
+                    <!-- Option 1: Website Type -->
+                    <div class="calc-step">
+                        <h5>1. WE TYPE OF WEBSITE NEEDED</h5>
+                        <div class="select-group">
+                            <select id="site-type" class="tech-select">
+                                <option value="0" disabled selected>Select Architecture...</option>
+                                <option value="15000">Landing Page (Single Page) - KES 15,000</option>
+                                <option value="35000">Corporate Site (Multi-page) - KES 35,000</option>
+                                <option value="75000">E-Commerce Store - KES 75,000</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Option 2: Hosting Tier -->
+                    <div class="calc-step">
+                        <h5>2. HOSTING POWER</h5>
+                        <div class="radio-group">
+                            <label class="tech-radio">
+                                <input type="radio" name="hosting" value="3000">
+                                <span class="radio-box">
+                                    <span class="r-title">Starter</span>
+                                    <span class="r-price">KES 3,000/yr</span>
+                                </span>
+                            </label>
+                            <label class="tech-radio">
+                                <input type="radio" name="hosting" value="6000" checked>
+                                <span class="radio-box">
+                                    <span class="r-title">Standard</span>
+                                    <span class="r-price">KES 6,000/yr</span>
+                                </span>
+                            </label>
+                            <label class="tech-radio">
+                                <input type="radio" name="hosting" value="15000">
+                                <span class="radio-box">
+                                    <span class="r-title">Enterprise</span>
+                                    <span class="r-price">KES 15,000/yr</span>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Option 3: Domain -->
+                    <div class="calc-step">
+                        <h5>3. DOMAIN EXTENSION</h5>
+                        <div class="radio-group">
+                            <label class="tech-radio">
+                                <input type="radio" name="domain" value="1500" checked>
+                                <span class="radio-box">
+                                    <span class="r-title">.co.ke</span>
+                                    <span class="r-price">KES 1,500/yr</span>
+                                </span>
+                            </label>
+                            <label class="tech-radio">
+                                <input type="radio" name="domain" value="2000">
+                                <span class="radio-box">
+                                    <span class="r-title">.com</span>
+                                    <span class="r-price">KES 2,000/yr</span>
+                                </span>
+                            </label>
+                            <label class="tech-radio">
+                                <input type="radio" name="domain" value="4000">
+                                <span class="radio-box">
+                                    <span class="r-title">.ke</span>
+                                    <span class="r-price">KES 4,000/yr</span>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Option 4: Add-ons -->
+                    <div class="calc-step">
+                        <h5>4. TACTICAL UPGRADES</h5>
+                        <div class="checkbox-group">
+                            <label class="tech-checkbox">
+                                <input type="checkbox" name="addon" value="5000">
+                                <span class="check-box">
+                                    <i class="fas fa-paint-brush"></i> Logo Design (+5k)
+                                </span>
+                            </label>
+                            <label class="tech-checkbox">
+                                <input type="checkbox" name="addon" value="10000">
+                                <span class="check-box">
+                                    <i class="fas fa-keyboard"></i> Pro Copywriting (+10k)
+                                </span>
+                            </label>
+                            <label class="tech-checkbox">
+                                <input type="checkbox" name="maintenance" value="3000">
+                                <span class="check-box">
+                                    <i class="fas fa-tools"></i> Monthly Maint. (+3k/mo)
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                </form>
+
+                <!-- Result Display -->
+                <div class="calc-result">
+                    <div class="result-label">ESTIMATED TOTAL</div>
+                    <div class="result-value" id="total-display">KES 0</div>
+                    <div class="result-actions no-print">
+                        <button onclick="window.print()" class="btn btn-outline" style="font-size: 0.8rem;">
+                            <i class="fas fa-file-pdf"></i> Download PDF
+                        </button>
+                        <a href="index.html#contact" class="btn btn-primary">Proceed with Quote</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: INDIVIDUAL SERVICES -->
+    <section class="section">
+        <div class="container">
+            <h3 class="section-title">A LA CARTE SERVICES</h3>
+            <div class="services-list-grid">
+                <div class="service-item">
+                    <i class="fas fa-globe"></i>
+                    <div class="s-info">
+                        <h5>Domain Registration</h5>
+                        <p>Starting from KES 1,500/yr</p>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-server"></i>
+                    <div class="s-info">
+                        <h5>High-Speed Hosting</h5>
+                        <p>Starting from KES 2,500/yr</p>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-pencil-ruler"></i>
+                    <div class="s-info">
+                        <h5>UI/UX Mockups</h5>
+                        <p>Starting from KES 15,000</p>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <div class="s-info">
+                        <h5>SSL & Security Hardening</h5>
+                        <p>KES 3,000/yr</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/254707575397" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer class="footer-bottom" style="margin-top: 50px;">
+        &copy; 2025 SHARL-TECH. All Rights Reserved. SYSTEM ACTIVE.
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+</body>
+
+</html>
