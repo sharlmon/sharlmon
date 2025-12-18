@@ -299,23 +299,69 @@
                 'domain': {
                     type: 'Service',
                     title: 'Domain Registration',
-                    price: 'Starting from KES 700/yr',
-                    desc: 'Secure your perfect digital identity with our vast selection of TLDs.',
-                    features: ['.com / .co.ke', 'DNS Management', 'auto-Renewal']
-                }
-            }
-        };
+                    // Define servicesData logic LOCALLY to ensure it exists before parsing
+                    // (This acts as a fallback if script.js loads late or fails)
+                    const servicesData = {
+                        'web': {
+                            type: 'SERVICE',
+                            title: 'Web Design',
+                            price: 'Custom',
+                            desc: 'Custom, responsive, and aesthetic websites tailored to your brand.',
+                            features: ['Responsive UI', 'Custom Branding', 'SEO Ready', 'Fast Loading']
+                        },
+                        'hosting': {
+                            type: 'SERVICE',
+                            title: 'Web Hosting',
+                            price: 'KES 5,000/yr',
+                            desc: 'Reliable, high-speed hosting solutions ensuring your site is always online.',
+                            features: ['99.9% Uptime', 'SSD Storage', 'Daily Backups', '24/7 Support']
+                        },
+                        'seo': {
+                            type: 'SERVICE',
+                            title: 'SEO & Marketing',
+                            price: 'KES 15,000/mo',
+                            desc: 'Boost your visibility and drive traffic with our data-driven strategies.',
+                            features: ['Keyword Analysis', 'On-Page Optimization', 'Content Strategy', 'Traffic Analytics']
+                        },
+                        'app': {
+                            type: 'SERVICE',
+                            title: 'App Development',
+                            price: 'Custom',
+                            desc: 'Native and cross-platform mobile applications.',
+                            features: ['iOS & Android', 'Modern UI/UX', 'Cloud Integration', 'Maintenance']
+                        },
+                        'starter': { // Added Package Definitions
+                            type: 'PACKAGE',
+                            title: 'Starter Package',
+                            price: 'KES 25,000',
+                            desc: 'Perfect for small businesses or personal portfolios.',
+                            features: ['5 Page Website', '1 Year Free Hosting', 'Basic SEO', 'Inquiry Form', 'Social Media Links']
+                        },
+                        'business': { // Added Package Definitions
+                            type: 'PACKAGE',
+                            title: 'Business Package',
+                            price: 'KES 45,000',
+                            desc: 'Ideal for growing businesses needing dynamic features.',
+                            features: ['10 Page Website', 'CMS Integration', 'Advanced SEO', 'Blog Section', 'Google Analytics']
+                        },
+                        'executive': { // Added Package Definitions
+                            type: 'PACKAGE',
+                            title: 'Executive Package',
+                            price: 'KES 80,000',
+                            desc: 'Full-scale solution for established enterprises.',
+                            features: ['Unlimited Pages', 'E-commerce (10 products)', 'Priority Support', 'Custom Functionality', 'Yearly Maintenance']
+                        }
+                    };
 
-        // Parse URL
-        const urlParams = new URLSearchParams(window.location.search);
-        const planKey = urlParams.get('plan');
-        const serviceKey = urlParams.get('service');
-        let selectedItem = null;
+                    // Parse URL parameters
+                    const urlParams = new URLSearchParams(window.location.search);
+                    const serviceKey = urlParams.get('service');
+                    const quoteDataParam = urlParams.get('quote_data');
 
-        if (planKey && db.plans[planKey]) {
-            selectedItem = db.plans[planKey];
-        } else if (serviceKey && db.services[serviceKey]) {
-            selectedItem = db.services[serviceKey];
+                    let selectedItem = null;
+
+                    if(serviceKey && servicesData[serviceKey]) {
+                        selectedItem = servicesData[serviceKey];
         }
 
         // Generate Random Session ID
