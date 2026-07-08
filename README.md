@@ -7,7 +7,7 @@ These are just a few of the projects I am currently developing:
 * **[Hodari Stores](https://hodaristores.uk):** A multi-tenant e-commerce platform with deep M-Pesa integration and custom retail logic.
 * **[Propflow](https://github.com/sharlmon/propflow):** A comprehensive SaaS platform designed to streamline real estate operations and ecosystem management.
 * **[Terrace Kilifi](https://terracekilifi.com):** A luxury hospitality website built for high-end digital engagement and booking management.
-* **[AfroFilms]((https://afrofilmsinternational.com/)):** A high-performance media platform built for local content distribution.
+* **[AfroFilms]([(https://afrofilmsinternational.com/)](https://afrofilmsinternational.com/)):** A high-performance media platform built for local content distribution.
 
 ### Tech Stack
 I prefer tools that allow for speed, scalability, and type-safety:
