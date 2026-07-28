@@ -9,7 +9,7 @@ Here is a snapshot of what I've been building:
 * **[Hodari Stores](https://hodaristores.uk):** A multi-tenant e-commerce platform engineered with a headless MedusaJS architecture, deep M-Pesa integration, and custom retail logic.
 * **[Propflow](https://github.com/sharlmon/propflow) & FindYourKeja:** A dual-component real estate software suite featuring B2B landlord operations and a consumer rental marketplace.
 * **Chat2Post AI:** A social media automation tool featuring backend media ingestion workflows to route video files from messaging webhooks to cloud storage. 
-* **Rebound:** A Progressive Web App (PWA) habit tracker built with custom service workers for offline web capabilities.
+* **[Rebound](https://reboundnow.today/):** A Progressive Web App (PWA) habit tracker built with custom service workers for offline web capabilities.
 * **[Terrace Kilifi](https://terracekilifi.com):** A luxury hospitality web infrastructure project featuring dynamic subpath asset mapping and performance tuning.
 * **[AfroFilms](https://afrofilmsinternational.com/):** A static single-page application built for local content distribution, deployed and cached via a Plesk VPS server.
 * **[Irishtrading Ltd](https://irishtrading.co.ke/):** A corporate construction and structural engineering web platform.
