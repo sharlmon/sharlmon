@@ -5,7 +5,7 @@ I am a Full-Stack Software Engineer, AI Systems Builder, and the founder of **[S
 ###  Featured Projects & Architecture
 Here is a snapshot of what I've been building:
 
-* **[Kazi Smart](https://agentic-aims.vercel.app/):** A collaborative, multi-agent AI job-matching ecosystem built with Next.js and Supabase.
+* **[Kazi Smart](https://agentic-aims.vercel.app/):** A multi-agent AI job-matching ecosystem built with Next.js and Supabase.
 * **[Hodari Stores](https://hodaristores.uk):** A multi-tenant e-commerce platform engineered with a headless MedusaJS architecture, deep M-Pesa integration, and custom retail logic.
 * **[Propflow](https://github.com/sharlmon/propflow) & FindYourKeja:** A dual-component real estate software suite featuring B2B landlord operations and a consumer rental marketplace.
 * **Chat2Post AI:** A social media automation tool featuring backend media ingestion workflows to route video files from messaging webhooks to cloud storage. 
