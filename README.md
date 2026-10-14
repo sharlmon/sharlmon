@@ -8,8 +8,8 @@ I traded aerospace engineering for code, and now I build products for the Kenyan
 - **[Weka](https://weka-psi.vercel.app)**: a free money app that tracks your bills and splits every pay into needs, wants, savings and debt
 
 ### Daily tools
-**Frontend:** Nuxt · Next.js · TypeScript · Tailwind CSS
-**Backend:** Node.js · Supabase · PostgreSQL · Prisma
+**Frontend:** Nuxt · Next.js · TypeScript · Tailwind CSS  
+**Backend:** Node.js · Supabase · PostgreSQL · Prisma  
 **DevOps:** Vercel · Docker · GitHub Actions · Nginx
 
 ###  Find me
